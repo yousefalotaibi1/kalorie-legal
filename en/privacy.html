@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Kalorie</title>
+<style>
+:root {
+  --bg: #ffffff; --fg: #1c1c1e; --muted: #6b6b70;
+  --line: #e5e5ea; --accent: #7C4DFF; --card: #f7f7f9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121214; --fg: #f2f2f7; --muted: #9a9aa0;
+    --line: #2c2c2e; --accent: #b39dff; --card: #1c1c1f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
+  padding: 2.5rem 1.25rem 5rem;
+}
+main { max-width: 44rem; margin: 0 auto; }
+a { color: var(--accent); }
+h1 { font-size: 1.9rem; line-height: 1.3; margin: 0 0 .35rem; }
+h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+h2:first-of-type { border-top: 0; padding-top: 0; }
+p { margin: 0 0 .9rem; }
+.sub { color: var(--muted); margin-bottom: .25rem; }
+/* The date is wrapped in <bdi dir="ltr">: inside an Arabic paragraph the
+   bidi algorithm reorders 2026-08-12 into 12-08-2026, which is a different
+   date to anyone who reads it as day-first. */
+.updated { color: var(--muted); font-size: .85rem; margin-bottom: 2.5rem; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2.5rem; }
+nav a {
+  display: inline-block; padding: .4rem .85rem; border: 1px solid var(--line);
+  border-radius: 999px; text-decoration: none; font-size: .9rem;
+}
+nav a.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.sources { list-style: none; padding: 0; margin: .5rem 0 0; }
+.sources li { background: var(--card); border-radius: .6rem; padding: .8rem 1rem; margin-bottom: .6rem; }
+.sources .note { color: var(--muted); font-size: .9rem; }
+footer { margin-top: 4rem; padding-top: 1.4rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="terms.html">Terms &amp; Conditions</a><a href="#" class="on">Privacy Policy</a><a href="medical.html">Medical Disclaimer</a><a href="sources.html">Medical &amp; Scientific Sources</a></nav>
+  <h1>Privacy Policy</h1>
+  <p class="sub">How we collect, use, store, and protect your information.</p>
+  <p class="updated">Last updated: <bdi dir="ltr">2026-08-12</bdi></p>
+    <h2>What we collect</h2>
+      <p>Account data: your email address, an encrypted password, and your display name — used to create your account and sign you in.</p>
+      <p>Profile data, all optional: username, bio, profile picture, age, weight, height, and sex. These are used to calculate your nutrition targets and, if you publish recipes, to show your public profile.</p>
+      <p>Tracking data: the meals, calories, macronutrients, workouts, supplements, water, and weight entries you record, so the app can show your history and progress.</p>
+      <p>Usage counts: the number of AI analyses you run each day, used solely to enforce the free-tier limit.</p>
+      
+    <h2>Food photos</h2>
+      <p>When you analyse a photo, the image is resized on your device and sent to Anthropic for analysis. We do not keep the image after the analysis returns — only the nutrition figures you accept and save.</p>
+      <p>Do not photograph anything you would not want processed by a third party. Analyse the food, not the room.</p>
+      
+    <h2>Payment data</h2>
+      <p>Subscriptions are handled by Apple through a subscription management provider. We never see, receive, or store your card details.</p>
+      
+    <h2>What is public and what is not</h2>
+      <p>Everything you record is private to your account by default. Our database enforces this at the row level, so one account cannot read another's data.</p>
+      <p>The only things that become public are what you explicitly publish: recipes and shared foods, along with the username, display name, and picture attached to them.</p>
+      
+    <h2>Who processes your data</h2>
+      <p>We do not sell your data and we do not share it with anyone for advertising.</p>
+      <p>Data passes through technical providers only: Supabase (database and authentication), Anthropic (AI food analysis), and Apple with a subscription management provider.</p>
+      
+    <h2>Deleting your account</h2>
+      <p>You can permanently delete your account from Profile. This erases your data from our servers, including anything you published.</p>
+      <p>Deletion cannot be undone and we cannot restore an account afterwards. If you want a published recipe to outlive your account, it will not — deleting removes it too.</p>
+      
+    <h2>Security</h2>
+      <p>Data travels over encrypted HTTPS connections. Access to the database is governed by row-level policies that scope every read and write to the account that owns the data.</p>
+      <p>No system is perfectly secure. Use a password you do not reuse elsewhere.</p>
+      
+    <h2>Contact</h2>
+      <p>For any privacy question, write to support@getkalorie.com.</p>
+      
+  <footer>
+    <p>support@getkalorie.com</p>
+    <p><a href="../ar/privacy.html">العربية</a></p>
+  </footer>
+</main>
+</body>
+</html>

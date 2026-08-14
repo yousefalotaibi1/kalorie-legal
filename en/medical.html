@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medical Disclaimer — Kalorie</title>
+<style>
+:root {
+  --bg: #ffffff; --fg: #1c1c1e; --muted: #6b6b70;
+  --line: #e5e5ea; --accent: #7C4DFF; --card: #f7f7f9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121214; --fg: #f2f2f7; --muted: #9a9aa0;
+    --line: #2c2c2e; --accent: #b39dff; --card: #1c1c1f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
+  padding: 2.5rem 1.25rem 5rem;
+}
+main { max-width: 44rem; margin: 0 auto; }
+a { color: var(--accent); }
+h1 { font-size: 1.9rem; line-height: 1.3; margin: 0 0 .35rem; }
+h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+h2:first-of-type { border-top: 0; padding-top: 0; }
+p { margin: 0 0 .9rem; }
+.sub { color: var(--muted); margin-bottom: .25rem; }
+/* The date is wrapped in <bdi dir="ltr">: inside an Arabic paragraph the
+   bidi algorithm reorders 2026-08-12 into 12-08-2026, which is a different
+   date to anyone who reads it as day-first. */
+.updated { color: var(--muted); font-size: .85rem; margin-bottom: 2.5rem; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2.5rem; }
+nav a {
+  display: inline-block; padding: .4rem .85rem; border: 1px solid var(--line);
+  border-radius: 999px; text-decoration: none; font-size: .9rem;
+}
+nav a.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.sources { list-style: none; padding: 0; margin: .5rem 0 0; }
+.sources li { background: var(--card); border-radius: .6rem; padding: .8rem 1rem; margin-bottom: .6rem; }
+.sources .note { color: var(--muted); font-size: .9rem; }
+footer { margin-top: 4rem; padding-top: 1.4rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="terms.html">Terms &amp; Conditions</a><a href="privacy.html">Privacy Policy</a><a href="#" class="on">Medical Disclaimer</a><a href="sources.html">Medical &amp; Scientific Sources</a></nav>
+  <h1>Medical Disclaimer</h1>
+  <p class="sub">Important limits and safety information for health-related features.</p>
+  <p class="updated">Last updated: <bdi dir="ltr">2026-08-12</bdi></p>
+    <h2>This app is not medical care</h2>
+      <p>Kalorie is not a medical device and its output is not medical advice. Nothing in it diagnoses a condition, prescribes a treatment, or replaces a consultation with a doctor or a registered dietitian.</p>
+      <p>Talk to a qualified professional before making a significant change to how you eat or train — especially if you have a health condition or take medication.</p>
+      
+    <h2>Every number here is an estimate</h2>
+      <p>Your calorie target is calculated from population-average equations. Real metabolic rates vary meaningfully between people of identical height, weight, age, and sex.</p>
+      <p>Treat your targets as a starting point to adjust against real results — your weight trend over several weeks — rather than as a measurement of your body.</p>
+      
+    <h2>AI photo analysis is the least precise feature</h2>
+      <p>The model identifies foods reasonably well. Portion size is much harder: depth is not visible in a photograph, and oil, sugar, and sauces are often invisible entirely.</p>
+      <p>Always review the figures before saving a meal. Do not treat an unreviewed analysis as a measurement.</p>
+      
+    <h2>When to seek supervision first</h2>
+      <p>Do not use this app to guide your intake without professional supervision if you are pregnant or breastfeeding, are under 18, have diabetes or kidney or liver disease, have a history of an eating disorder, or are recovering from surgery or a serious illness.</p>
+      <p>Calorie tracking can worsen disordered eating. If counting is making your relationship with food harder rather than easier, stop and speak to someone qualified.</p>
+      
+    <h2>Weight-loss pace</h2>
+      <p>The app limits weight-change pace to a range considered generally safe for most healthy adults. Faster loss than the app suggests is not a target to beat — it usually costs muscle and rarely lasts.</p>
+      
+    <h2>In an emergency</h2>
+      <p>This app cannot help in a medical emergency. Contact your local emergency services immediately.</p>
+      
+  <footer>
+    <p>support@getkalorie.com</p>
+    <p><a href="../ar/medical.html">العربية</a></p>
+  </footer>
+</main>
+</body>
+</html>

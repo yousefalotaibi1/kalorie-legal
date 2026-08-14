@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المصادر الطبية والعلمية — كالوري</title>
+<style>
+:root {
+  --bg: #ffffff; --fg: #1c1c1e; --muted: #6b6b70;
+  --line: #e5e5ea; --accent: #7C4DFF; --card: #f7f7f9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121214; --fg: #f2f2f7; --muted: #9a9aa0;
+    --line: #2c2c2e; --accent: #b39dff; --card: #1c1c1f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
+  padding: 2.5rem 1.25rem 5rem;
+}
+main { max-width: 44rem; margin: 0 auto; }
+a { color: var(--accent); }
+h1 { font-size: 1.9rem; line-height: 1.3; margin: 0 0 .35rem; }
+h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+h2:first-of-type { border-top: 0; padding-top: 0; }
+p { margin: 0 0 .9rem; }
+.sub { color: var(--muted); margin-bottom: .25rem; }
+/* The date is wrapped in <bdi dir="ltr">: inside an Arabic paragraph the
+   bidi algorithm reorders 2026-08-12 into 12-08-2026, which is a different
+   date to anyone who reads it as day-first. */
+.updated { color: var(--muted); font-size: .85rem; margin-bottom: 2.5rem; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2.5rem; }
+nav a {
+  display: inline-block; padding: .4rem .85rem; border: 1px solid var(--line);
+  border-radius: 999px; text-decoration: none; font-size: .9rem;
+}
+nav a.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.sources { list-style: none; padding: 0; margin: .5rem 0 0; }
+.sources li { background: var(--card); border-radius: .6rem; padding: .8rem 1rem; margin-bottom: .6rem; }
+.sources .note { color: var(--muted); font-size: .9rem; }
+footer { margin-top: 4rem; padding-top: 1.4rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="terms.html">الشروط والأحكام</a><a href="privacy.html">سياسة الخصوصية</a><a href="medical.html">إخلاء المسؤولية الطبية</a><a href="#" class="on">المصادر الطبية والعلمية</a></nav>
+  <h1>المصادر الطبية والعلمية</h1>
+  <p class="sub">المراجع التي تستند إليها أرقام التغذية واللياقة في التطبيق.</p>
+  <p class="updated">آخر تحديث: <bdi dir="ltr">2026-08-12</bdi></p>
+    <h2>معدل الأيض الأساسي</h2>
+      <p>يُحسب بمعادلة Mifflin-St Jeor، واختيرت لأنها تقدّر صرف الطاقة أثناء الراحة تقديراً أدق من معادلة Harris-Benedict الأقدم لدى معظم السكان المعاصرين.</p>
+      <ul class="sources"><li><a href="https://pubmed.ncbi.nlm.nih.gov/2305711/" target="_blank" rel="noopener noreferrer">ميفلين وسانت جيور وآخرون (1990)</a><div class="note">معادلة تنبؤية جديدة لصرف الطاقة أثناء الراحة لدى الأصحاء. المجلة الأمريكية للتغذية السريرية 51(2):241-7.</div></li></ul>
+    <h2>إجمالي الصرف اليومي للطاقة</h2>
+      <p>يُضرب معدل الأيض الأساسي في معامل نشاط بين 1.2 لقليل الحركة و1.9 للتدريب اليومي الشديد، وفق معاملات مستوى النشاط البدني المعتمدة.</p>
+      <ul class="sources"><li><a href="https://www.fao.org/4/y5686e/y5686e00.htm" target="_blank" rel="noopener noreferrer">الفاو ومنظمة الصحة العالمية وجامعة الأمم المتحدة (2004)</a><div class="note">متطلبات الطاقة لدى الإنسان: تقرير مشاورة الخبراء المشتركة. القسم 5.3 يتناول مستويات النشاط البدني.</div></li></ul>
+    <h2>السعرات في كل كيلوغرام من كتلة الجسم</h2>
+      <p>تستخدم توقّعات تغيّر الوزن نحو 7700 سعرة لكل كيلوغرام من كتلة الجسم.</p>
+      <p>وهو تقريب تخطيطي لا ثابت فيزيائي، والبحث أدناه هو سبب قولنا هذا: الرقم يناسب من يحمل دهناً أكثر، ويبالغ في تقدير العجز اللازم لمن هم أقل دهناً.</p>
+      <ul class="sources"><li><a href="https://pubmed.ncbi.nlm.nih.gov/17848938/" target="_blank" rel="noopener noreferrer">هول (2008)</a><div class="note">ما العجز في الطاقة اللازم لكل وحدة من فقد الوزن؟ المجلة الدولية للسمنة.</div></li></ul>
+    <h2>السعرات في العناصر الغذائية</h2>
+      <p>يُحسب البروتين والكربوهيدرات بأربع سعرات لكل غرام، والدهون بتسع سعرات — وهي معاملات أتواتر العامة، وأساس بطاقات القيمة الغذائية في العالم كله.</p>
+      <ul class="sources"><li><a href="https://www.fao.org/4/y5022e/y5022e00.htm" target="_blank" rel="noopener noreferrer">ورقة الفاو للغذاء والتغذية 77 (2003)</a><div class="note">طاقة الغذاء — طرق التحليل ومعاملات التحويل. الفصل الثالث يتناول معاملات تحويل الطاقة.</div></li></ul>
+    <h2>أهداف البروتين</h2>
+      <p>خيارات البروتين تتراوح بين 1.6 و2.2 غرام لكل كيلوغرام من وزن الجسم، و1.6 غ/كغ هو الحد الأدنى الذي لا ينزل التطبيق تحته حين يعيد توزيع عناصرك الغذائية.</p>
+      <p>وبيان الموقف أدناه يضع 1.4–2.0 غ/كغ يومياً كافياً لمعظم من يمارسون الرياضة، و2.3–3.1 غ/كغ للمتدربين أثناء عجز السعرات. ونطاقنا يقع داخل هذا المدى، مائلاً نحو الحفاظ على الكتلة العضلية أثناء إنقاص الوزن.</p>
+      <ul class="sources"><li><a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">ياغر وآخرون (2017)</a><div class="note">بيان موقف الجمعية الدولية لتغذية الرياضيين: البروتين والتمرين.</div></li><li><a href="https://www.nationalacademies.org/publications/10490" target="_blank" rel="noopener noreferrer">معهد الطب الأمريكي (2005)</a><div class="note">المدخولات الغذائية المرجعية للطاقة والكربوهيدرات والألياف والدهون والكوليسترول والبروتين والأحماض الأمينية.</div></li></ul>
+    <h2>أهداف الدهون</h2>
+      <p>تُضبط الدهون على 30٪ من السعرات أثناء إنقاص الوزن و25٪ في غير ذلك، بما يُبقي المدخول داخل النطاق المقبول لتوزيع العناصر الغذائية وفوق ما يلزم لإنتاج الهرمونات وامتصاص الفيتامينات الذائبة في الدهون.</p>
+      <ul class="sources"><li><a href="https://www.nationalacademies.org/publications/10490" target="_blank" rel="noopener noreferrer">معهد الطب الأمريكي (2005)</a><div class="note">المدخولات الغذائية المرجعية — النطاقات المقبولة لتوزيع العناصر الغذائية.</div></li></ul>
+    <h2>مؤشر كتلة الجسم</h2>
+      <p>تتبع فئاته تصنيف منظمة الصحة العالمية: زيادة الوزن عند 25 فأعلى، والسمنة عند 30 فأعلى.</p>
+      <p>والمؤشر لا يفرّق بين العضل والدهن، وهو أداة مسح سكاني لا تشخيص فردي.</p>
+      <ul class="sources"><li><a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener noreferrer">منظمة الصحة العالمية</a><div class="note">السمنة وزيادة الوزن — صحيفة وقائع.</div></li></ul>
+    <h2>من أين تأتي أرقام الأطعمة</h2>
+      <p>لنكن صريحين في هذه: التطبيق لا يستعلم من قاعدة بيانات لتركيب الأغذية. أرقام الأطعمة تأتي من تحليل الذكاء الاصطناعي ومن مدخلات شاركها مستخدمون آخرون، وكلاهما غير موثّق مخبرياً.</p>
+      <p>وقاعدة البيانات أدناه هي المرجع المعتمد الذي تتحقق منه حين يهمّك الرقم.</p>
+      <ul class="sources"><li><a href="https://fdc.nal.usda.gov/" target="_blank" rel="noopener noreferrer">USDA FoodData Central</a><div class="note">قاعدة بيانات تركيب الأغذية والعناصر الغذائية التابعة لوزارة الزراعة الأمريكية.</div></li></ul>
+    <h2>ملاحظة على ما سبق كله</h2>
+      <p>هذه المراجع تصف متوسطات لدى مجموعات مدروسة. وهي أفضل نقطة انطلاق عامة متاحة، لكنها ليست قياساً لك أنت.</p>
+      
+  <footer>
+    <p>support@getkalorie.com</p>
+    <p><a href="../en/sources.html">English</a></p>
+  </footer>
+</main>
+</body>
+</html>

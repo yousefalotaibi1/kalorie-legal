@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>إخلاء المسؤولية الطبية — كالوري</title>
+<style>
+:root {
+  --bg: #ffffff; --fg: #1c1c1e; --muted: #6b6b70;
+  --line: #e5e5ea; --accent: #7C4DFF; --card: #f7f7f9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121214; --fg: #f2f2f7; --muted: #9a9aa0;
+    --line: #2c2c2e; --accent: #b39dff; --card: #1c1c1f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
+  padding: 2.5rem 1.25rem 5rem;
+}
+main { max-width: 44rem; margin: 0 auto; }
+a { color: var(--accent); }
+h1 { font-size: 1.9rem; line-height: 1.3; margin: 0 0 .35rem; }
+h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+h2:first-of-type { border-top: 0; padding-top: 0; }
+p { margin: 0 0 .9rem; }
+.sub { color: var(--muted); margin-bottom: .25rem; }
+/* The date is wrapped in <bdi dir="ltr">: inside an Arabic paragraph the
+   bidi algorithm reorders 2026-08-12 into 12-08-2026, which is a different
+   date to anyone who reads it as day-first. */
+.updated { color: var(--muted); font-size: .85rem; margin-bottom: 2.5rem; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2.5rem; }
+nav a {
+  display: inline-block; padding: .4rem .85rem; border: 1px solid var(--line);
+  border-radius: 999px; text-decoration: none; font-size: .9rem;
+}
+nav a.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.sources { list-style: none; padding: 0; margin: .5rem 0 0; }
+.sources li { background: var(--card); border-radius: .6rem; padding: .8rem 1rem; margin-bottom: .6rem; }
+.sources .note { color: var(--muted); font-size: .9rem; }
+footer { margin-top: 4rem; padding-top: 1.4rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="terms.html">الشروط والأحكام</a><a href="privacy.html">سياسة الخصوصية</a><a href="#" class="on">إخلاء المسؤولية الطبية</a><a href="sources.html">المصادر الطبية والعلمية</a></nav>
+  <h1>إخلاء المسؤولية الطبية</h1>
+  <p class="sub">حدود مهمة ومعلومات سلامة تخصّ المزايا الصحية.</p>
+  <p class="updated">آخر تحديث: <bdi dir="ltr">2026-08-12</bdi></p>
+    <h2>هذا التطبيق ليس رعاية طبية</h2>
+      <p>كالوري ليس جهازاً طبياً، وما يعرضه ليس نصيحة طبية. لا شيء فيه يشخّص حالة ولا يصف علاجاً ولا يغني عن استشارة طبيب أو أخصائي تغذية معتمد.</p>
+      <p>استشر مختصاً قبل أي تغيير كبير في طعامك أو تدريبك — خصوصاً إن كان لديك حالة صحية أو تتناول دواءً.</p>
+      
+    <h2>كل رقم هنا تقدير</h2>
+      <p>هدفك من السعرات محسوب بمعادلات مبنية على متوسطات السكان. ومعدلات الأيض الحقيقية تتفاوت تفاوتاً ملموساً بين أشخاص متطابقين في الطول والوزن والعمر والجنس.</p>
+      <p>فتعامل مع أهدافك كنقطة بداية تعدّلها بناءً على النتيجة الفعلية — اتجاه وزنك عبر عدة أسابيع — لا كقياس لجسمك.</p>
+      
+    <h2>تحليل الصور أقل المزايا دقة</h2>
+      <p>النموذج يتعرّف على الأطعمة تعرّفاً جيداً، لكن تقدير الكمية أصعب بكثير: العمق لا يُرى في الصورة، والزيت والسكر والصلصات كثيراً ما تكون غير مرئية أصلاً.</p>
+      <p>راجع الأرقام دائماً قبل حفظ الوجبة، ولا تتعامل مع تحليل لم تراجعه على أنه قياس.</p>
+      
+    <h2>متى تحتاج إشرافاً مختصاً أولاً</h2>
+      <p>لا تعتمد على هذا التطبيق في توجيه غذائك دون إشراف مختص إن كنتِ حاملاً أو مرضعاً، أو كان عمرك دون الثامنة عشرة، أو لديك سكري أو مرض في الكلى أو الكبد، أو لديك تاريخ مع اضطرابات الأكل، أو كنت تتعافى من عملية أو مرض شديد.</p>
+      <p>وعدّ السعرات قد يفاقم اضطراب الأكل. فإن كان العدّ يزيد علاقتك بالطعام صعوبةً لا سهولة، فتوقّف وتحدّث مع مختص.</p>
+      
+    <h2>سرعة إنقاص الوزن</h2>
+      <p>يحصر التطبيق سرعة تغيّر الوزن في نطاق يُعدّ آمناً عموماً لمعظم البالغين الأصحاء. والنزول الأسرع مما يقترحه ليس هدفاً تتجاوزه — فهو غالباً يكلّف عضلاً ونادراً ما يدوم.</p>
+      
+    <h2>في الحالات الطارئة</h2>
+      <p>لا يُغني هذا التطبيق في أي حالة طارئة. اتصل بالطوارئ فوراً.</p>
+      
+  <footer>
+    <p>support@getkalorie.com</p>
+    <p><a href="../en/medical.html">English</a></p>
+  </footer>
+</main>
+</body>
+</html>

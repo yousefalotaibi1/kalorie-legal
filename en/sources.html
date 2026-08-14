@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medical &amp; Scientific Sources — Kalorie</title>
+<style>
+:root {
+  --bg: #ffffff; --fg: #1c1c1e; --muted: #6b6b70;
+  --line: #e5e5ea; --accent: #7C4DFF; --card: #f7f7f9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121214; --fg: #f2f2f7; --muted: #9a9aa0;
+    --line: #2c2c2e; --accent: #b39dff; --card: #1c1c1f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
+  padding: 2.5rem 1.25rem 5rem;
+}
+main { max-width: 44rem; margin: 0 auto; }
+a { color: var(--accent); }
+h1 { font-size: 1.9rem; line-height: 1.3; margin: 0 0 .35rem; }
+h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+h2:first-of-type { border-top: 0; padding-top: 0; }
+p { margin: 0 0 .9rem; }
+.sub { color: var(--muted); margin-bottom: .25rem; }
+/* The date is wrapped in <bdi dir="ltr">: inside an Arabic paragraph the
+   bidi algorithm reorders 2026-08-12 into 12-08-2026, which is a different
+   date to anyone who reads it as day-first. */
+.updated { color: var(--muted); font-size: .85rem; margin-bottom: 2.5rem; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2.5rem; }
+nav a {
+  display: inline-block; padding: .4rem .85rem; border: 1px solid var(--line);
+  border-radius: 999px; text-decoration: none; font-size: .9rem;
+}
+nav a.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.sources { list-style: none; padding: 0; margin: .5rem 0 0; }
+.sources li { background: var(--card); border-radius: .6rem; padding: .8rem 1rem; margin-bottom: .6rem; }
+.sources .note { color: var(--muted); font-size: .9rem; }
+footer { margin-top: 4rem; padding-top: 1.4rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="terms.html">Terms &amp; Conditions</a><a href="privacy.html">Privacy Policy</a><a href="medical.html">Medical Disclaimer</a><a href="#" class="on">Medical &amp; Scientific Sources</a></nav>
+  <h1>Medical &amp; Scientific Sources</h1>
+  <p class="sub">The references behind the nutrition and fitness figures in the app.</p>
+  <p class="updated">Last updated: <bdi dir="ltr">2026-08-12</bdi></p>
+    <h2>Basal metabolic rate</h2>
+      <p>Calculated with the Mifflin-St Jeor equation, chosen because it estimates resting energy expenditure more accurately than the older Harris-Benedict equation across most modern populations.</p>
+      <ul class="sources"><li><a href="https://pubmed.ncbi.nlm.nih.gov/2305711/" target="_blank" rel="noopener noreferrer">Mifflin MD, St Jeor ST, et al. (1990)</a><div class="note">A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr 51(2):241-7.</div></li></ul>
+    <h2>Total daily energy expenditure</h2>
+      <p>Your basal rate is multiplied by an activity factor between 1.2 (sedentary) and 1.9 (very intense daily training), following the standard physical activity level multipliers.</p>
+      <ul class="sources"><li><a href="https://www.fao.org/4/y5686e/y5686e00.htm" target="_blank" rel="noopener noreferrer">FAO / WHO / UNU (2004)</a><div class="note">Human energy requirements: report of a joint expert consultation. Section 5.3 covers physical activity levels.</div></li></ul>
+    <h2>Calories per kilogram of body mass</h2>
+      <p>Weight-change projections use roughly 7,700 kcal per kilogram of body mass.</p>
+      <p>It is a planning approximation, not a physical constant. The paper below is the reason we say so: the figure fits people carrying more fat and overestimates the deficit needed by leaner ones.</p>
+      <ul class="sources"><li><a href="https://pubmed.ncbi.nlm.nih.gov/17848938/" target="_blank" rel="noopener noreferrer">Hall KD (2008)</a><div class="note">What is the required energy deficit per unit weight loss? Int J Obes (Lond).</div></li></ul>
+    <h2>Calories in macronutrients</h2>
+      <p>Protein and carbohydrate are counted at 4 kcal per gram and fat at 9 kcal per gram — the Atwater general factors, which are the basis of nutrition labelling worldwide.</p>
+      <ul class="sources"><li><a href="https://www.fao.org/4/y5022e/y5022e00.htm" target="_blank" rel="noopener noreferrer">FAO Food and Nutrition Paper 77 (2003)</a><div class="note">Food energy — methods of analysis and conversion factors. Chapter 3 covers energy conversion factors.</div></li></ul>
+    <h2>Protein targets</h2>
+      <p>Protein options range from 1.6 to 2.2 g per kilogram of body weight, with 1.6 g/kg as the floor the app will not go below when it rebalances your macros.</p>
+      <p>The position stand below puts 1.4-2.0 g/kg/day as sufficient for most exercising people, and 2.3-3.1 g/kg/day for trained people eating at a deficit. Our range sits inside that span, weighted toward preserving lean mass while losing weight.</p>
+      <ul class="sources"><li><a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">Jäger R, et al. (2017)</a><div class="note">International Society of Sports Nutrition position stand: protein and exercise. J Int Soc Sports Nutr.</div></li><li><a href="https://www.nationalacademies.org/publications/10490" target="_blank" rel="noopener noreferrer">Institute of Medicine (2005)</a><div class="note">Dietary Reference Intakes for energy, carbohydrate, fiber, fat, fatty acids, cholesterol, protein, and amino acids.</div></li></ul>
+    <h2>Fat targets</h2>
+      <p>Fat is set at 30% of calories while losing weight and 25% otherwise, which keeps intake inside the acceptable macronutrient distribution range and above the level needed for hormone production and absorption of fat-soluble vitamins.</p>
+      <ul class="sources"><li><a href="https://www.nationalacademies.org/publications/10490" target="_blank" rel="noopener noreferrer">Institute of Medicine (2005)</a><div class="note">Dietary Reference Intakes — acceptable macronutrient distribution ranges.</div></li></ul>
+    <h2>Body mass index</h2>
+      <p>BMI categories follow the World Health Organization classification: overweight at 25 and above, obesity at 30 and above.</p>
+      <p>BMI does not distinguish muscle from fat. It is a population screening tool, not an individual diagnosis.</p>
+      <ul class="sources"><li><a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener noreferrer">World Health Organization</a><div class="note">Obesity and overweight — fact sheet.</div></li></ul>
+    <h2>Where food nutrition figures come from</h2>
+      <p>Be clear about this one: the app does not query a food composition database. Nutrition figures come from AI analysis and from entries other users have shared, and neither is laboratory-verified.</p>
+      <p>The database below is the authoritative reference to check a figure against when it matters.</p>
+      <ul class="sources"><li><a href="https://fdc.nal.usda.gov/" target="_blank" rel="noopener noreferrer">USDA FoodData Central</a><div class="note">The US Department of Agriculture's food composition and nutrient database.</div></li></ul>
+    <h2>A note on all of the above</h2>
+      <p>These references describe averages across studied populations. They are the best general starting point available; they are not a measurement of you.</p>
+      
+  <footer>
+    <p>support@getkalorie.com</p>
+    <p><a href="../ar/sources.html">العربية</a></p>
+  </footer>
+</main>
+</body>
+</html>
