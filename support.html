@@ -94,7 +94,12 @@ h2 { font-size: 1.45rem; font-weight: 800; margin: 0 0 1.25rem; letter-spacing: 
   background: linear-gradient(160deg, #3b3550, #17131f 60%);
   box-shadow: 0 22px 48px rgba(23,19,32,.22), 0 2px 6px rgba(23,19,32,.14);
 }
-.shots img { width: 100%; display: block; border-radius: 23px; }
+/* height:auto is not optional here. The img carries width/height attributes so
+   the browser can reserve the right space before the file arrives; but setting
+   only the width in CSS leaves the attribute height in force, and the capture
+   renders 232 wide by 904 tall — stretched to twice its height. The attributes
+   still do their job against layout shift; this restores the aspect ratio. */
+.shots img { width: 100%; height: auto; display: block; border-radius: 23px; }
 .shots figcaption { color: var(--muted); font-size: .875rem; margin-top: .8rem; text-align: center; }
 @media (max-width: 34rem) {
   .shots figure { width: 200px; }
