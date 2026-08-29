@@ -76,13 +76,29 @@ html[data-lang="ar"] [lang="en"], html[data-lang="en"] [lang="ar"] { display: no
 h2 { font-size: 1.45rem; font-weight: 800; margin: 0 0 1.25rem; letter-spacing: -.3px; }
 
 /* ── screenshots ── */
-.shots { display: flex; gap: 1rem; overflow-x: auto; padding-bottom: .75rem; margin-bottom: 3rem; }
-.shots figure { margin: 0; flex: 0 0 auto; width: 208px; }
-.shots img {
-  width: 100%; display: block; border-radius: 20px; border: 1px solid var(--line);
-  box-shadow: 0 14px 34px rgba(23,19,32,.14);
+/* "safe center" centres the row but falls back to start-alignment the moment
+   the content is wider than the box. Plain "center" on a scrolling flex row
+   pushes the overflow off the leading edge, where no amount of scrolling
+   reaches it — on a phone that silently hides the first screenshot. */
+.shots {
+  display: flex; gap: 1.25rem; overflow-x: auto;
+  justify-content: center; justify-content: safe center;
+  padding: .5rem .25rem 1rem; margin-bottom: 3.5rem;
 }
-.shots figcaption { color: var(--muted); font-size: .85rem; margin-top: .55rem; text-align: center; }
+.shots figure { margin: 0; flex: 0 0 auto; width: 232px; }
+/* A thin dark bezel around the capture. Without it a screenshot of a white
+   screen on a near-white page has no edge, and reads as a stray rectangle
+   rather than a phone. */
+.shots .device {
+  padding: 7px; border-radius: 30px;
+  background: linear-gradient(160deg, #3b3550, #17131f 60%);
+  box-shadow: 0 22px 48px rgba(23,19,32,.22), 0 2px 6px rgba(23,19,32,.14);
+}
+.shots img { width: 100%; display: block; border-radius: 23px; }
+.shots figcaption { color: var(--muted); font-size: .875rem; margin-top: .8rem; text-align: center; }
+@media (max-width: 34rem) {
+  .shots figure { width: 200px; }
+}
 
 /* ── features ── */
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; margin-bottom: 3rem; }
