@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "2N46B89BBW.com.kalorie.app"
+        ],
+        "components": [
+          {
+            "/": "/reset-password",
+            "comment": "Password recovery opens in the app"
+          }
+        ]
+      }
+    ]
+  }
+}
